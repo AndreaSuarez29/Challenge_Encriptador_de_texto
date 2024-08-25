@@ -1,0 +1,165 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root{
+    --color-primario:#000000;
+    --color-secundario: #f6f6f6;
+    --color-terciario: #22D4FD;
+    --color-hover: #272727;
+    --color-rosa: #d38cd1;
+
+    --fuente-monserrat: 'Montserrat', sans-serif;
+    --fuente-kroma: 'Krona One', sans-serif;
+}
+
+* {
+    padding: 0;
+    margin:0;
+}
+
+.presentacion__imagen{
+    width: 50%;
+}
+
+body{
+    /*height: 100vh;*/
+    box-sizing: border-box;
+    background-color: var(--color-rosa);
+    color: var(--color-secundario);
+}
+
+
+.header{
+    padding: 5% 0% 0% 2%;
+}
+
+.footer{
+    background-color: var(--color-primario);
+    padding: 24px;
+    color: var(--color-rosa);
+    text-align: center;
+    font-family: var(--fuente-monserrat);
+    font-size: 1.5rem;
+    font-weight: 400;
+}
+
+.logo{
+    padding-top: 10px;
+    margin-left: 10px;
+    width: 10%;
+}
+
+.presentacion {
+    padding: 0% 5%;
+    display: flex;
+    align-items:normal;
+    justify-content: space-between;
+    gap: 82px;
+}
+
+
+main{
+    display: flex;
+    margin-bottom: 10px;
+    margin-left: 5px;
+}
+
+.presentacion__area{
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    border-radius: 10px;
+}
+
+::placeholder{color: #0A3871;}
+    .text-area{
+        outline: none;
+    }
+
+.presentacion__area__resultado{
+    border: none;
+    color: #0A3871;
+    margin-top: 90px;
+    text-transform: lowercase;
+    border-radius: 10px;
+}
+
+
+.presentacion__area__resultado:focus{
+    outline: none;
+}
+
+
+.imagen__buscador{
+    margin-left: 0px;
+}
+
+.presentacion__area__texto__boton{
+    display: flex;
+    margin-top: 18px;
+}
+
+.boton__desencriptar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 20px;
+    width: 328px;
+}
+
+.boton__encriptar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    width: 328px;
+}
+
+
+.boton__copiar{
+    background-color: #D8DFE8;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    color: #0A3871;
+    cursor: pointer;
+    height: 67px;
+    margin-left: 0px;
+    margin-top: 20px;
+    width: 328px;
+    display: none
+}
+
+.presentacion__area__texto{
+    color: #495057;
+    font-size: 18px;
+}
+
+
+
+/* Responsive design */
+@media (max-width: 57.5em) {
+    main{
+        flex-direction: column-reverse;
+        
+    }
+  
+    .presentacion__area__resultado{
+
+        background-image: none;
+
+        margin-left: 0%;
+        margin-top: 90%;
+  
+    }
+
+}
+
+
+
